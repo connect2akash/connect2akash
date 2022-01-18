@@ -1,5 +1,5 @@
 <div class="container">
-  <label class="labelText" for="timer">Enter Timer Limit  </label> <input min="0" #input (keyup)="onKey($event)" type="number" id="timer">
+  <label class="labelText" for="timer">Enter Timer Limit  </label> <input type="text" #input (keyup)="onKey($event)" id="timer" numbersOnly>
 </div>
 <div class="container">
   <button class="button" mat-flat-button color="primary" (click)="onStart()" [disabled]="!inputValue">Start/Pause</button>
