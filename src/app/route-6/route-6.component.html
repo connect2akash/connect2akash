@@ -1,0 +1,5 @@
+<div class="main">
+<cdk-virtual-scroll-viewport itemSize="12">
+  <mat-card class="person" *cdkVirtualFor="let person of createRange()"><button mat-flat-button color="primary" (click)="onClick(person)">Button {{person}}</button></mat-card>
+</cdk-virtual-scroll-viewport>
+</div>

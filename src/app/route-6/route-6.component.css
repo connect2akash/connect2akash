@@ -1,0 +1,19 @@
+.main {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+cdk-virtual-scroll-viewport {
+    height: 100vh;    
+}
+
+.person {
+    width: 200px;
+    height: 200px;
+    margin: 43px;
+    border: 1px solid gray;
+    display: inline-block;
+    text-align: center;
+}

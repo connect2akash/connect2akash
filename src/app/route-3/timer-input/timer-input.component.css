@@ -1,0 +1,23 @@
+
+
+.container {
+    padding: 5px;
+    float: left;
+    max-height: 89px;
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.labelText {
+    margin-right: 10px;
+}
+
+.button {
+    margin: 20px;
+}
+
+p {
+    height: 7px;
+    font-size: 13px;
+}

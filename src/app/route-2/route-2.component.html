@@ -1,0 +1,31 @@
+<div class="main">
+  <div class="displayFlex">
+    <mat-icon class="borderRight" (click)="onClick(1)">view_module</mat-icon>
+    <mat-icon class="borderLeft" (click)="onClick(2)">view_stream</mat-icon>
+    <mat-form-field appearance="fill">
+      <mat-label> Price Filter</mat-label>
+      <mat-select (selectionChange)="onChange($event.value)">
+        <mat-option value="5">Reset</mat-option>
+        <mat-option value="1"> Smaller than 30</mat-option>
+        <mat-option value="2">Between 30 and 50</mat-option>
+        <mat-option value="3">Between 50 and 70</mat-option>
+        <mat-option value="4">More than 70</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div id="item" [ngClass]="selectedType == 1 ? 'grid' : 'list'">
+    <ng-container *ngFor="let i of itemsMockdata">
+      <mat-card class="card">
+        <mat-card-title-group>
+          <mat-card-title>{{i.name}}</mat-card-title>
+          <mat-card-subtitle>{{i.price + " "}} Rs </mat-card-subtitle>
+          <img mat-card-sm-image src="../../assets/burger.png" >
+        </mat-card-title-group>
+        <mat-card-content>
+          {{i.des}}
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>

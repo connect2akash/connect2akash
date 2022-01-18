@@ -1,0 +1,21 @@
+<div class="main">
+
+  <div class="w100">
+    <div class="flex1">
+      <app-timer-display [timer]="timer" [currentTimer]="currentTimer"></app-timer-display>
+    </div>
+    <div class="flex2">
+      <app-timer-input (reset)="onTimerReset($event)" (start)="onTimerStart($event)"></app-timer-input>
+    </div>
+  </div>
+  
+  <div class="w100">
+    <div class="flex1 noBorder">
+      <app-timer-stamp [isStarted]="isStarted" [isReset]="isReset"></app-timer-stamp>
+    </div>
+    <div class="flex2 noBorder">
+      <app-timer-count [startCount]="startCount" [pauseCount]="pauseCount" [isReset]="isReset"></app-timer-count>
+    </div>
+  </div>
+
+</div>

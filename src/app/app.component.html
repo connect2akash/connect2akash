@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row navigationBar">
+    <div>
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="route-1">Route 1</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="route-2">Route 2</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="route-3">Route 3</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="route-4">Route 4</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="route-5">Route 5</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="route-6">Route 6</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row"> 
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

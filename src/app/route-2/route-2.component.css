@@ -1,0 +1,65 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  margin:auto;
+}
+
+.main {
+  border: 1px solid gray;
+  padding:20px;
+  margin:auto;
+  width:100%;
+}
+  
+#item {
+  display: grid;
+  grid-template-columns: 100%;
+  cursor: pointer;
+}
+
+#item.grid {
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#item.list {
+  grid-template-columns: 50% 50%;
+}
+
+.displayFlex {
+  display: flex;
+  flex-direction: right;
+  flex-flow: row;
+  -ms-flex-align: end;
+  justify-content: right;
+  padding-top: 20px;
+  cursor: pointer;
+  position: sticky;
+}
+
+.card {
+  border: 1px solid gray;
+  margin: 0px 25px 55px;
+}
+
+.mat-icon {
+  width: 36px;
+  height: 36px;
+  font-size: 35px;
+  background-color: #ffd740;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.borderRight {
+  border-right: 2px solid;
+  margin-right: 0px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.borderLeft {
+  border-left: 2px solid;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: 0px;
+}
